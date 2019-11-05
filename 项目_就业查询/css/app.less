@@ -1,0 +1,66 @@
+
+@app-width:450px;
+@app-height:700px;
+
+#app{
+  position: absolute;
+  left: 50%;
+  margin-left: 0 - @app-width/2;
+  width: @app-width;
+  height: @app-height;
+  border-radius: 30px;
+  background-color: #dfdfdf;
+  opacity: .9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#app::-webkit-scrollbar{
+  display: none;
+}
+
+.info{
+  position: absolute;
+  height: 135px;
+  left: 80px;
+  width: @app-width - 150px;
+  opacity: 1;
+  @info-color:#efefef;
+  background-color:@info-color;
+  border-radius: 10px;
+
+  .info-same{
+    position: absolute;
+    left: 40px;
+    background:@info-color;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .info-name{
+    .info-same;
+    top: 10px;
+    height: 20px;
+  }
+  .info-time{
+    .info-same;
+    top: 40px;
+  }
+  .info-pos{
+    .info-same;
+    top: 70px;
+  }
+  .info-src{
+    .info-same;
+    top: 100px;
+  }
+
+}
+
+
+
+
+
+
+
+

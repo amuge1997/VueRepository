@@ -1,0 +1,88 @@
+
+@input-width:@main-width;
+@input-height:30px;
+@input-color:@main-color;
+@input-imgurl:"../img/jia.png";
+.pos{position: absolute}
+#div-input{
+  position: absolute;
+  width: @input-width;
+  height: @input-height;
+  border: solid #888 2px;
+  border-radius: 7px;
+
+  .div-input-text{
+    @this-top:3px;
+    @this-left:10px;
+
+    @this-width:@input-width - 50;
+    @this-height:@input-height - @this-top*2;
+
+    .pos;
+    width: @this-width;
+    height: @this-height;
+    left: @this-left;
+    top: @this-top;
+  }
+  .div-input-input{
+    @this-width:@input-width - 50;
+
+    width: @this-width;
+    border: none;
+    outline: none;
+    font-style: italic;
+    color: @input-color;
+  }
+  .div-input-jia{
+    @this-top:7px;
+    @this-left:@input-width - 22; //178px
+
+    @this-width:16px;
+    @this-height:16px;
+
+    .pos;
+    top: @this-top;
+    left: @this-left;
+    width: @this-width;
+    height: @this-height;
+    background-image: url(@input-imgurl);
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+  .div-input-kuang{
+    @this-top:0px;
+    @this-left:@input-width - 30;
+
+    @this-width:30px;
+    @this-height:30px;
+
+    .pos;
+    top: @this-top;
+    left: @this-left;
+    width: @this-width;
+    height: @this-height;
+    border-left: solid @input-color 2px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

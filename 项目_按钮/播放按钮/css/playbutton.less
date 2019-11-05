@@ -1,0 +1,62 @@
+
+
+
+#main{
+  position: absolute;
+  left: 500px;
+  top: 100px;
+}
+
+.playbutton{
+  position: absolute;
+
+  .same{
+    position: absolute;
+    background-position: center center;
+    transition: .2s;
+  };
+
+  @playurl:"../img/play.png";
+  @pauseurl:"../img/pause.png";
+  @hidesize:55px;
+  @showsize:40px;
+  @hideshow:@hidesize - @showsize;
+
+  .play{
+    .same;
+    width:@showsize;
+    height:@showsize;
+    background-image: url(@playurl);
+    background-size: 100% 100%;
+    opacity: 1;
+  }
+
+  .pause{
+    .same;
+    width: @hidesize;
+    height:@hidesize;
+    margin-left: 0- @hideshow/2;
+    margin-top: 0- @hideshow/2;
+    background-image: url(@pauseurl);
+    opacity: 0;
+    background-size: 87% 87%;
+    background-repeat: no-repeat;
+  }
+
+  .over{
+    .same;
+    width: @showsize;
+    height: @showsize;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
